@@ -27,9 +27,10 @@ jobs:
 
       - name: Push Swagger file to SwaggerHub
         env:
-          SWAGGERHUB_API_KEY: "655c3450-fa4c-4bfc-b193-cfdc55d84692"
+          SWAGGERHUB_API_KEY: ${{ secrets.SWAGGERHUB_API_KEY }}
+          #"655c3450-fa4c-4bfc-b193-cfdc55d84692"
           #${{ secrets.SWAGGERHUB_API_KEY }}
         run: |
           # Replace these with your SwaggerHub owner, API name, and version
-          # swaggerhub api:update AdvancedComputerSoft/platform-flow/0.0.1 --file bpm-service/swagger.yaml
-          echo "Changes push to swaggerhub:::::::::::${{ secrets.SWAGGERHUB_API_KEY }}<<<"
+          swaggerhub api:update AdvancedComputerSoft/platform-flow/0.0.1 --file bpm-service/swagger.yaml
+          echo "Changes push to swaggerhub:::::::::::${{ secrets.SWAGGERHUB_API_KEY }}   ${{ SWAGGERHUB_API_KEY }}<<<"
