@@ -5,8 +5,8 @@ on:
     branches:
       - MWPAP-15992-enable-swagger-git-integration
       - platform-workflow  # Change this to your desired branch
-    paths:
-      - "sample-git-rnd/bpm-service_rnd
+#    paths:
+#      - "sample-git-rnd/bpm-service_rnd
 /swagger.yaml"
 
 jobs:
