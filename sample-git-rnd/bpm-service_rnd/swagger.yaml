@@ -5,7 +5,7 @@ info:
   title: Platform Flow API
   version: 0.0.1
 servers:
-  - description: SwaggerHub API Auto_Mocking
+  - description: SwaggerHub OA API Auto_Mocking
     url: https://virtserver.swaggerhub.com/Kamlakant.Mapkar@oneadvanced.com/bpm-workflow_api/v1.1
   - url: http://localhost:8445/bpm
     description: BPM Workflow API to perform workflow operations. User can deploy process, start new process instance, complete task, view historical data of workflow with these APIs.
